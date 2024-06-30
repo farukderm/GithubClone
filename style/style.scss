@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.button{
+ 
+  padding: 5px;
+  &:hover{
+    border-radius: 5px;
+    background: hsla(0, 0%, 33%, 0.795);
+  }
+}
+.count{
+  background: rgb(58, 58, 58);
+  color: white;
+  margin: 4px;
+  padding:  2px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+.blue-font{
+  color: rgb(0, 119, 230);
+}
+body {
+  background-color: rgb(13, 17, 23);
+  color: white;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: rgb(1, 4, 9);
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .top-left {
+      display: flex;
+      align-items: center;
+      i {
+        margin: 5px;
+        margin-left: 15px;
+        gap: 5px;
+        padding: 7px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        color: gray;
+      }
+      span {
+        color: rgb(230, 230, 230);
+        gap: 5px;
+        margin: 5px;
+        padding: 5px;
+        font-weight: bold;
+      }
+      .git-logo {
+        font-size: 32px;
+        align-items: center;
+        border: none;
+        color: rgb(230, 230, 230);
+      }
+    }
+    .top-right {
+      display: flex;
+      margin: 5px;
+      padding: 5px;
+      gap: 10px;
+      align-items: center;
+     
+      
+      img{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+      }
+      .search {
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 3px;
+
+        
+        input {
+          border: none;
+          font-size: 14px;
+          background-color: rgb(1, 4, 9);
+          color: white;
+          outline: none;
+          width: 280px;
+          margin: 7px;
+          
+        }
+      }
+     .notify{
+
+      i{
+        border: 1px solid gray;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 7px;
+      }
+     }
+      .create-new {
+        border: 1px solid gray;
+        border-radius: 5px;
+        
+        margin: 5px;
+        padding: 5px;
+        i {
+          margin: 0 7px 0 7px;
+          border: none;
+        }
+      }
+    }
+  }
+  .bottom-bar {
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+    padding: 3px;
+   
+  }
+
+ 
+}
+main{
+ display: grid;
+ grid-template-columns: 1fr 3fr;
+ .profile-card{
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  align-items: center;
+  img{
+    border-radius: 50%;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+  .profile-detail{
+    display: flex;
+    flex-direction: column;
+    .profile-name{
+      color: gray;
+      margin-bottom: 30px;
+    }
+  p{
+    margin: 10px;
+  }
+  button{
+    background: rgba(83, 82, 82, 0.651);
+    color: white;
+    align-items: center;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    &:hover{
+      background: rgb(121, 121, 121);
+    }
+    
+  }
+  }
+ }
+ .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border-radius: 10px;
+  line-height: 40px;
+  .about-card{
+    border: 1px solid gray;
+    margin: 20px;
+
+    border-radius: 10px;
+      .top-side{
+    
+    margin: 5px;
+    padding: 20px;
+    
+  }
+
+  .bottom-side{
+    margin-top: 50px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+  }}
+
+  .repo-section
+  {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin: 10px;
+   padding: 10px;
+   
+   .head-side{
+  
+     
+   }
+  }
+ }
+
+
+}
