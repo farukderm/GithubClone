@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.public {
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 0px 10px;
+  margin: 0;
+  font-weight: 500;
+}
+
 .button {
   padding: 5px;
 }
@@ -22,7 +31,7 @@
 }
 
 .blue-font {
-  color: rgb(0, 119, 230);
+  color: rgb(65, 140, 236);
 }
 
 body {
@@ -180,6 +189,79 @@ main .content .repo-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 5px;
+  padding: 10px;
+}
+main .content .repo-all {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+main .content .repo-all .repo-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 10px;
   margin: 10px;
+  padding: 5px;
+  gap: 5px;
+  line-height: 25px;
+}
+main .content .repo-all .repo-item .repo-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+}
+main .content .repo-all .repo-item p {
+  margin: 10px;
+  padding: 3px;
+  font-size: 13px;
+}
+
+footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .top-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+footer .top-footer ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px;
+  padding: 5px;
+  align-items: center;
+}
+footer .top-footer ul li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+}
+footer .top-footer ul li a {
+  text-decoration: none;
+  font-size: 11px;
+  color: gray;
+}
+footer .top-footer ul li a:hover {
+  color: rgb(65, 140, 236);
+  text-decoration: underline;
+}
+footer .bottom-footer {
+  color: gray;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 60px;
+}
+footer .bottom-footer i {
+  font-size: 25px;
   padding: 10px;
 }/*# sourceMappingURL=style.css.map */

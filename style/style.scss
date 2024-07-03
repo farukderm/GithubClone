@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+$blue_font:rgb(65, 140, 236);
+.public{
+  color: gray;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 0px 10px;
+  margin: 0;
+  font-weight: 500;
+}
 .button{
  
   padding: 5px;
@@ -20,7 +29,7 @@
   font-size: 12px;
 }
 .blue-font{
-  color: rgb(0, 119, 230);
+  color: $blue_font;
 }
 body {
   background-color: rgb(13, 17, 23);
@@ -192,15 +201,88 @@ main{
    display: flex;
    justify-content: space-between;
    align-items: center;
-   margin: 10px;
+   margin: 5px;
    padding: 10px;
    
-   .head-side{
-  
-     
-   }
+   
   }
+ .repo-all{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .repo-item{
+    .repo-head{
+      display: flex;
+      justify-content: space-between;
+      font-size: 11px;
+     
+    }
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+    gap: 5px;
+    line-height: 25px;
+    p{
+      margin: 10px;
+      padding: 3px;
+      font-size: 13px;
+    }
+
+  }
+ }
  }
 
 
+}
+footer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .top-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    ul{
+      list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+      margin: 5px;
+      padding: 5px;
+      align-items: center;
+      li{
+        display: inline-block;
+        margin: 5px;
+        padding: 5px;
+        a{
+          text-decoration: none;
+          font-size: 11px;
+          color: gray;
+          &:hover{
+            color: $blue_font;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .bottom-footer{
+    color: gray;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+   padding-bottom:60px ;
+    i{
+      font-size: 25px;
+   
+      padding: 10px;
+    }
+  }
 }
