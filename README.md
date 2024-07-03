@@ -1,4 +1,5 @@
 # GithubClone
 
 HTML SCSS ile yapmış olduğum GitHub Profil Sayfası
-![Screenshot_2024-06-30-23-17-02_5779](https://github.com/farukderm/GithubClone/assets/42474468/fe0073ea-552d-4ee3-b744-2eefd206e867)
+Ekran Görüntüsü
+![2024-07-0323-54-32-ezgif com-video-to-gif-converter](https://github.com/farukderm/GithubClone/assets/42474468/382c36e1-a58d-45b6-8256-658116284ecb)
